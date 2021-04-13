@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Super-Trunfo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        
+            <img src="" class="page-logo"
+                alt="">
+            <h1 class="page-title">Super Trunfo - Carros</h1>
+    
+            <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+    
+            <form id="form">
+                <h2>Escolha o seu atributo</h2>
+                <div class="wrapper">
+                    <div id="placar"></div>
+                    <div id="quantidade-cartas-jogador"></div>
+                    <div id="quantidade-cartas-maquina"></div>
+                    <div id="cartas">
+                        <div id="carta-jogador" class="carta"></div>
+                        <div id="carta-maquina" class="carta"></div>
+                    </div>
+                      <div id="resultado"></div>
+                    
+                </div>
+                <input class="button-jogar" type="button" id="btnJogar" onclick="jogar()"
+                        disabled="false" value = "Jogar"></input>
+                <button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true">Próxima
+                    rodada</button>
+                <button type="button" id="btnNovoJogo" onclick="novoJogo()" disabled="true">NovoJogo</button>
+            </form>
+        </div>        
+        <script src="./assets/js.js" async defer></script>
+    </body>
+</html>
